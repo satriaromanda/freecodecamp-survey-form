@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Internet Provider Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Internet Provider Survey Form</h1>
+        <p id="description">Please answer the question on below for my experiment about internet provider</p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name
+              <input type="text" id="name" placeholder="Enter your name" required> 
+        </label>
+        <label for="email" id="email-label">Email
+            <input type="email" id="email" placeholder="Enter your Email" required> 
+      </label>
+      <label for="number" id="number-label">Age
+        <input type="number" id="number" placeholder="How Old Are You ?" min="16" max="50" required> 
+      </label>
+      <label for="age" id="age-label">Choose your gender
+        <select name="dropdown" id="dropdown">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </select>
+      </label>
+      <label for="rating" id="rating-label">Are you necessary use an Internet Provider ? </label>
+      <input type="radio" name="rating" value="1"/>Absolutely<br/>
+        <input type="radio" name="rating" value="2"/>Probably<br/>
+        <input type="radio" name="rating" value="3"/>Not Sure<br/>  
+     <br>
+        <label for="rating" id="number-label">Choose your provider currently used  </label>
+    <input type="checkbox" name="provider" value="telkomsel"/>Telkomsel<br/>
+        <input type="checkbox" name="provider" value="byu"/>by.U<br/>
+        <input type="checkbox" name="provider" value="tri"/>Tri<br/>
+        <input type="checkbox" name="provider" value="smartfren"/>Smartfren<br/>
+        <input type="text" name="other" placeholder="Other"><br/>
+        <label for="comments" name="comments-label">
+          What is your opinion to improve the provider
+          <textarea name="" id="comments" cols="30" rows="10"></textarea>
+      </label>
+      <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
